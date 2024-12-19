@@ -1,0 +1,90 @@
+body
+{
+    background-color: rgba(255, 235, 205, 0.881);
+}
+h1
+{
+    font-family: "Pacifico", cursive;
+    background-color: #febe2e;
+    width: fit-content;
+    margin: auto;
+}
+h3
+{
+    background: -webkit-linear-gradient(right, #b5ac49, #3ca55c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.form-control:focus
+{
+    box-shadow: 0 0 0 .25rem rgba(229, 175, 15, 0.25) ;
+    border-color: orange;
+    
+}
+.error-message {
+    
+    font-size: 19px;
+    background-color: white;
+    width: fit-content;
+    position: relative;
+    padding-inline: 20px;
+    padding-block: 30px;
+    display: none;
+   margin: auto;
+   bottom:400px;
+   border-radius: 10px;
+   z-index: 99999;
+   
+}
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.ball1
+{
+    width: 25px;
+    height: 25px;
+    background-color: #f15f5d;
+    border-radius: 100px;
+    margin: 5px;
+}
+.ball2
+{
+    width: 25px;
+    height: 25px;
+    background-color: #febe2e;
+    border-radius: 100px;
+    margin: 5px;
+   
+}
+.ball3
+{
+    width: 25px;
+    height: 25px;
+    background-color: #4db748;
+    border-radius: 100px;
+    margin: 5px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+.btn-info
+{
+    background-color: #d1512d;
+    border: unset;
+}
+.btn-info:hover
+{
+    background-color: #d1512d;
+}

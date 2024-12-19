@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./images/bookmark.png">
+    
+    <!-- ==========fontawesome styling=========== -->
+    <link rel="stylesheet" href="./css/all.min.css">
+     <!-- ==========google fonts=========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- ==========bootstrap styling=========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- ==========main styling=========== -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+ 
+  <div class="container">
+    <h1 class="text-center mt-5 position-relative z-1 bbb">Bookmarker</h1>
+    
+    <div class="py-5 text-center">......................................................................................................................................................</div>
+
+
+    <h3 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i> </h3>
+
+    <form action="" class="my-3">
+        
+        <div class="py-2 fw-semibold"><i class="fas fa-book-bookmark px-1"></i> Site Name</div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="promarkbook" placeholder="name@example.com" oninput="validateInputs()">
+            <label for="promarkbook">Bookmark Name</label>
+        </div>
+
+        <div class="py-2 fw-semibold"><i class="fas fa-link-slash px-1"></i> Site URL</div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="prolink" placeholder="name@example.com" oninput="validateInputs()">
+            <label for="prolink">Website URL</label>
+        </div>
+     
+        <button class="btn btn-info fw-semibold mt-3 d-block m-auto px-5 text-white" type="button" id="btn">Submit</button>
+    </form>
+
+    
+    
+    <div class="text-center">......................................................................................................................................................</div>
+
+    <table class="table mt-4 text-center bg-light">
+        <thead>
+            <tr>
+                <th class="text-capitalize">index</th>
+                <th class="text-capitalize">Website Name</th>
+                <th class="text-capitalize">Visit</th>
+                <th class="text-capitalize">Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tableContent">
+            
+            
+
+        </tbody>
+    </table>
+  
+    
+    <div id="error-message" style="display:none;" class="error-message">
+       <div class="d-flex mb-4">
+        <div class="ball1"></div>
+       <div class="ball2"></div>
+       <div class="ball3"></div>
+       </div>
+        <h4 class="py-2">Site Name or Url is not valid, Please follow the<br> rules below :</h4><p><i class="fa-sharp fa-regular fa-circle-right text-danger"></i> Site name must contain at least 3 characters</p><p> <i class="fa-sharp fa-regular fa-circle-right text-danger"></i> Site URL must be a valid one</p><span id="close-button" class="close-button"><i class="fa-solid fa-xmark close fs-3"></i></span></div>
+    
+</div>
+<div id="overlay" class="overlay"></div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
